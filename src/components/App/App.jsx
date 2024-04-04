@@ -1,3 +1,5 @@
+import { Resizable } from 'react-resizable';
+
 /* eslint-disable no-inner-declarations */
 // import Navbar from "../Navbar/Navbar";
 // import { BrowserRouter as Router } from "react-router-dom";
@@ -7,7 +9,6 @@
 // import { supabase } from "../Supabase/client.js";
 // import AppRoutes from "../AppRoutes/AppRoutes.jsx";
 // import DesktopNavbar from "../DesktopNavbar/DesktopNavbar.jsx";
-
 // export const TokenContext = createContext();
 // export const SetTokenContext = createContext();
 
@@ -47,7 +48,13 @@ function App() {
   // }, []);
 
   return (
-    <div className="text-red">Hello</div>
+    <>
+      <div className="text-red">Hello</div>
+      <Resizable >
+        <span>Contents</span>
+      </Resizable>
+    </>
+
     // <TokenContext.Provider value={token}>
     //   <SetTokenContext.Provider value={setToken}>
     //     <ThemeProvider theme={bookmarkd}>
@@ -61,7 +68,7 @@ function App() {
     //     </ThemeProvider>
     //   </SetTokenContext.Provider>
     // </TokenContext.Provider>
-  );
+  )
 }
 
-export default App;
+export default App
