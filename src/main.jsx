@@ -7,6 +7,7 @@ import "./index.css"
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <StyledEngineProvider injectFirst> */}
+    {/* <div className="text-3xl font-bold underline">Hello</div> */}
     <App />
     {/* <>Hello</> */}
     {/* </StyledEngineProvider> */}
